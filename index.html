@@ -200,74 +200,184 @@
       scroll-behavior: smooth;
     }
     
-    /* Mobile-first: Large sizes by default */
+    /* Mobile-first: Smaller sizes for mobile */
     #cover-title {
-      font-size: 5rem !important;
-    }
-    
-    #cover-subtitle {
-      font-size: 2.2rem !important;
-    }
-    
-    #album-title {
-      font-size: 4rem !important;
-    }
-    
-    #divider-text {
-      font-size: 2rem !important;
-    }
-    
-    #main-message {
-      font-size: 2rem !important;
-      line-height: 1.8 !important;
-    }
-    
-    #closing-message {
       font-size: 2.5rem !important;
     }
     
+    #cover-subtitle {
+      font-size: 1.1rem !important;
+    }
+    
+    #album-title {
+      font-size: 1.8rem !important;
+    }
+    
+    #divider-text {
+      font-size: 1rem !important;
+    }
+    
+    #main-message {
+      font-size: 1rem !important;
+      line-height: 1.6 !important;
+    }
+    
+    #closing-message {
+      font-size: 1.3rem !important;
+    }
+    
     #future-message {
-      font-size: 2.2rem !important;
-      line-height: 2 !important;
+      font-size: 1rem !important;
+      line-height: 1.6 !important;
     }
     
     section {
-      padding: 24px 20px !important;
+      padding: 16px 16px !important;
     }
     
     header {
-      padding-top: 32px !important;
-      padding-bottom: 20px !important;
+      padding-top: 20px !important;
+      padding-bottom: 16px !important;
     }
     
     footer {
-      padding: 32px 20px !important;
+      padding: 20px 16px !important;
     }
     
     .glass-card {
-      padding: 32px 24px !important;
-      border-radius: 20px;
+      padding: 20px 16px !important;
+      border-radius: 16px;
     }
     
     button {
-      padding: 18px 32px !important;
-      font-size: 1.1rem !important;
-      border-radius: 20px;
+      padding: 12px 20px !important;
+      font-size: 0.9rem !important;
+      border-radius: 16px;
     }
     
     #gallery-prev, #gallery-next {
-      width: 60px !important;
-      height: 60px !important;
-      font-size: 2rem !important;
+      width: 45px !important;
+      height: 45px !important;
+      font-size: 1.5rem !important;
+    }
+    
+    @media (min-width: 640px) {
+      #cover-title {
+        font-size: 3rem !important;
+      }
+      
+      #cover-subtitle {
+        font-size: 1.3rem !important;
+      }
+      
+      #album-title {
+        font-size: 2.5rem !important;
+      }
+      
+      #divider-text {
+        font-size: 1.2rem !important;
+      }
+      
+      #main-message {
+        font-size: 1.2rem !important;
+        line-height: 1.8 !important;
+      }
+      
+      #closing-message {
+        font-size: 1.6rem !important;
+      }
+      
+      #future-message {
+        font-size: 1.2rem !important;
+        line-height: 1.8 !important;
+      }
+      
+      section {
+        padding: 24px 20px !important;
+      }
+      
+      header {
+        padding-top: 28px !important;
+        padding-bottom: 20px !important;
+      }
+      
+      footer {
+        padding: 28px 20px !important;
+      }
+      
+      .glass-card {
+        padding: 28px 24px !important;
+      }
+      
+      button {
+        padding: 14px 28px !important;
+        font-size: 1rem !important;
+      }
+      
+      #gallery-prev, #gallery-next {
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 1.8rem !important;
+      }
     }
     
     @media (min-width: 769px) {
       #cover-title {
-        font-size: 5rem !important;
+        font-size: 4rem !important;
+      }
+      
+      #cover-subtitle {
+        font-size: 1.6rem !important;
       }
       
       #album-title {
         font-size: 3.5rem !important;
+      }
+      
+      #divider-text {
+        font-size: 1.4rem !important;
+      }
+      
+      #main-message {
+        font-size: 1.4rem !important;
+        line-height: 1.8 !important;
+      }
+      
+      #closing-message {
+        font-size: 2rem !important;
+      }
+      
+      #future-message {
+        font-size: 1.4rem !important;
+        line-height: 2 !important;
+      }
+      
+      section {
+        padding: 32px 24px !important;
+      }
+      
+      header {
+        padding-top: 32px !important;
+        padding-bottom: 20px !important;
+      }
+      
+      footer {
+        padding: 32px 24px !important;
+      }
+      
+      .glass-card {
+        padding: 32px 28px !important;
+      }
+      
+      button {
+        padding: 16px 32px !important;
+        font-size: 1.1rem !important;
+      }
+      
+      #gallery-prev, #gallery-next {
+        width: 65px !important;
+        height: 65px !important;
+        font-size: 2rem !important;
       }
     }
   </style>
@@ -717,5 +827,5 @@
     // Handle window resize for gallery
     window.addEventListener('resize', initGallery);
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cb25e2a42b5f924',t:'MTc3MDYyOTYzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cb2a606e35d411d',t:'MTc3MDYzMjU3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
